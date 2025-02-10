@@ -1,0 +1,11 @@
+import 'dart:io';
+
+void main() async {
+  final file = File('/d:/Projects/dart/Week_1/fileio/input.txt');
+  try {
+    String contents = await file.readAsString();
+    print(contents);
+  } catch (e) {
+    print('Error: $e');
+  }
+}
